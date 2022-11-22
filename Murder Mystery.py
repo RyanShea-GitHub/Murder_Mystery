@@ -1,4 +1,5 @@
 import pygame
+import os
 
 # Window Structure
 screen_width, screen_height = 800, 800
@@ -6,14 +7,14 @@ WINDOW = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Murder Mystery')
 
 # Program Icon
-pygame_icon = pygame.image.load('Godly_Icon.png')
+pygame_icon = pygame.image.load(os.path.join('assets', 'Godly_Icon.png')).convert()
 pygame.display.set_icon(pygame_icon)
 
 # Start button
-# start_button = pygame.image.load('Start_Btn.png')
+# start_button = pygame.image.load(os.path.join('assets', 'start_Btn.png')).convert()
 
 # Sample Image
-qr_code_img = pygame.image.load('qrcode.png')
+qr_code_img = pygame.image.load(os.path.join('assets', 'qrcode.png')).convert()
 qr_codeX, qr_codeY = 150, 150    
 
 # Game Loop
