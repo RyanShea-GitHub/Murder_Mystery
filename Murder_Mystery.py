@@ -1,6 +1,7 @@
 import pygame
 pygame.init()
 
+# test 12345
 # Window Structure
 window_width, window_height = 800, 800
 WINDOW = pygame.display.set_mode((window_width, window_height))
